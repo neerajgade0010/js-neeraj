@@ -1,4 +1,4 @@
-const { use } = require("react")
+
 
 const mysym = Symbol("nilam") // gives unique key 
 // symbol is used to create a unique property key for object 
@@ -35,7 +35,11 @@ const jsuser = {
 console.log(jsuser)
 // functions in objects --->
 
-// jsuser.greeting = function(){
-//     console.log("hello user")
-// }
-// console.log(jsuser.greeting())
+jsuser.greeting = function(){
+    console.log("hello user")
+}
+console.log(jsuser.greeting())
+jsuser.greetingtwo = function(){
+    console.log(`Hello js user ${this.name}`)
+}
+console.log(jsuser.greetingtwo());
