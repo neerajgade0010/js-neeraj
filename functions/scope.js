@@ -49,5 +49,33 @@ console.log(date);
 // })
 // console.log(date)
 
-const total = books.filter((bk) => bk.publish > 2000).length
-console.log(total)
+// const total = books.filter((bk) => bk.publish > 2000
+// && bk.publish === 2011)
+// console.log(total)
+
+// // maps -->
+
+// const myNumber = [1,2,3,4,5,6,7,8,9,10];
+// const newNumber = myNumber.map((num) => {
+//     return num + 10;
+// })
+// console.log(newNumber)
+
+let nums = [1,2,3,4,5,6,7,8,9,10]
+const result = nums.map((nums) => nums * 10)
+    .map((nums) => nums +1)
+    .filter((nums) => nums > 70)
+
+console.log(result);
+
+// reduce method -- >  main use case to combine all elemnets of 
+// an array into a single value 
+
+const array = [1,2,3]
+// const mytotal = array.reduce((acc , currval) => acc + currval , 0);
+// console.log(mytotal);
+
+const mytotal = array.reduce(function (acc , currval) {
+    return acc + currval 
+}, 0)
+console.log(mytotal)
