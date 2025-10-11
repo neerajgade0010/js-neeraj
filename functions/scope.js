@@ -79,3 +79,20 @@ const mytotal = array.reduce(function (acc , currval) {
     return acc + currval 
 }, 0)
 console.log(mytotal)
+
+const shopping = [
+    {
+        itemName: "js course",
+        price : 2999
+    },
+    {
+        itemName: "py course",
+        price : 3999
+    },
+    {
+        itemName : "react course",
+        price : 2999
+    }
+]
+const totalprice = shopping.redue((acc , price) => acc + price.price, 0)
+console.log(totalprice);
