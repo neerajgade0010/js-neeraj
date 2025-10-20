@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> neeraj here </h1>
+    <button id = "start">start</button>
+    <button id = "end">stop</button>
+</body>
+<script>
+    function name(){
+        console.log("neeraj")
+    }
+    document.querySelector('#start').addEventListener('click' , 
+        function(){
+             changeme = setInterval(name , 2000);
+        }
+    )
+    document.querySelector('#end').addEventListener('click' , function(){
+        clearInterval(changeme)
+        console.log("STOPPED")
+        document.querySelector('h1').innerHTML = "hey done something new right!!!"
+    })
+    
+</script>
+</html>
